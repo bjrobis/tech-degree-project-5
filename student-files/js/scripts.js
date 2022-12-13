@@ -87,7 +87,9 @@ function fetchData(url) {
    //event listener for close button on modal
     modalClose.forEach(button => {
         button.addEventListener('click', (e) => {
-            e.target.parentNode.parentNode.parentNode.style.visibility = 'hidden';
+            modalCards.forEach(card => {
+                card.style.visibility = 'hidden';
+            });
         });
     })
 
