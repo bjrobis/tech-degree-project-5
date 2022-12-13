@@ -18,7 +18,7 @@ function fetchData(url) {
   }
 
 //fetches the data (12 random profies) from the api URL, creates variables for all the needed data and attaches the profile card to the document
-  fetchData('https://randomuser.me/api/?country=United%20States&results=12')
+  fetchData('https://randomuser.me/api/?nat=us&results=12')
     .then(data => {
         let info = data.results;
     
